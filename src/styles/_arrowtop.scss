@@ -1,0 +1,31 @@
+.toTop{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 70px;
+    height: 70px;
+    border: solid 3px $accent;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    transform: translateX(300px);
+    svg{
+        fill: #2c2c2c;
+        width: 50px;
+        transition: all ease-in-out .2s;
+    }
+    &:hover{
+        border-radius: 50%;
+        svg{
+            transform: translateY(-2px);
+        }
+    }
+}
+.toTop-inview{
+    transform: translateX(0);
+}
+

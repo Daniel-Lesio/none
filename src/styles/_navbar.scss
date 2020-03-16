@@ -1,0 +1,73 @@
+header{
+    @media screen and (max-width :599px) {
+        font-size: 20px !important;
+    }
+    transition: all ease-in-out 0.3s;
+    z-index: 4;
+    max-width: 100vw;
+    .brand{
+        padding: 0 10px;
+        
+        font-size: 35px;
+        @media screen and(max-width:500px) {
+            font-size: 10px!important;
+        }
+        letter-spacing: 3px;
+    }
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background : rgba(white,0);
+    color: #ddd;
+    line-height: 70px;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+}
+.nav-lg{
+    display: flex;
+    .nav-item{
+        margin: 0;
+        padding: 0;
+        a{
+            display: flex;
+            padding : 0 20px;
+        }
+    }
+}
+.nav-btn{
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    svg{
+        fill: white;
+        height: 40px;
+        width: 40px;
+    }   
+}
+
+.headerIn{
+    background: white;
+    color : #2c2c2c;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    .nav-btn svg{
+        fill: #2c2c2c;
+    }
+}
+.brand{
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 10px;
+        height: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}

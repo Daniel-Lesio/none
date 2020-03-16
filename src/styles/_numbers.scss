@@ -1,0 +1,69 @@
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.numbers{
+    color: white;
+}
+.numbers-box{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background: white;
+    h1{
+        color: #2c2c2c;
+    }
+    p{
+        color: #3c3c3c;
+        padding-bottom: 120px;
+    }
+    svg{
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.numbers-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3c3c3c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background:radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),   url('../assets/numbers.jpg')center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.flex-grid{
+
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    .flex-grid-item{
+        background: white;
+        margin: 10px;
+        text-align: center;
+        width : 300px;
+        max-width : 95vw;
+        h1{
+            color: #2c2c2c;
+        }
+        p{
+            color: #3c3c3c;
+        }
+        svg{
+            fill : $accent;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+        }
+    }
+}

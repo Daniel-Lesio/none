@@ -1,0 +1,30 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import 'variables';
+@import 'global';
+@import 'hero';
+@import 'info';
+@import "navbar";
+@import "arrowtop";
+@import "numbers";
+@import 'gallery';
+@import "contact";
+@import "footer";
+hr{
+    transition: width .3s ease-in-out;
+    width: 0px;
+    height: 10px;
+    border: none;
+    background: $accent;
+    border-radius: 3px;
+}
+.c{
+    background: $accent;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+#hero{
+    transition: transform ease-in-out 0.3s;    
+    background:radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('../assets/heromirror.jpg')center no-repeat;
+    background-size: cover;
+    @media (max-width:640px){
+        background-position: right;
+        justify-content: center;
+      }
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group{
+    margin: 0 auto;
+}
+.btn{
+    background: #1c1c1c;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background: #2c2c2c;
+    }
+}
+
+.hero-box{
+    width: 900px;
+    max-width: 95%;
+    text-align: center;
+    @media (min-width:640px){
+        text-align: left;
+      }
+    
+    h1{
+        transition: transform ease-in-out 0.4s;
+        color: white;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #ddd;
+    }
+}
+.heroOut{
+    background: black!important;
+}
+.hero-overlay-out{
+    background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .9))!important;
+}
